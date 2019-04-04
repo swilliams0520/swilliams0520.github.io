@@ -38,6 +38,6 @@ p {
   border: 1px solid #f3f3f3;
   width: 30%;
   margin: 10px;
-  box-shadow: 2px 2px 7px #f3f3f3;
   text-align: center;
+  padding: 7px;
 }
