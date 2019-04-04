@@ -1,0 +1,43 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Slab|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Bungee+Shade|Hind:400,700|Overpass+Mono');
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  min-height: 100%;
+}
+.wrap {
+  background-color: #94c44c;
+}
+h1 {
+  font-family: "Bungee Shade", monospace;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #fffff;
+  transition: .7s ease;
+  margin: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+.summary {
+  text-align: center;
+}
+p {
+  color: #FFFFF;
+  font-family: 'Arvo', serif;
+}
+.facility-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.facility {
+  border: 1px solid #f3f3f3;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 2px 2px 7px #f3f3f3;
+  text-align: center;
+}
