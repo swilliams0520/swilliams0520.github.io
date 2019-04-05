@@ -80,7 +80,7 @@ nav {
 }
 
 .stacked-links div {
-  margin: 14px;
+  margin: 10px;
 }
 
 #top ul {
@@ -110,5 +110,8 @@ nav {
 @media (max-width:640px) {
   h1:hover {
     letter-spacing: 1px;
+  }
+  .description {
+    max-width: 77%;
   }
 }
