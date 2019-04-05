@@ -2,9 +2,6 @@
 import csv
 
 sum_of_facilities = 0
-print("<h2>Oregon Cannabis Facilities</h2>")
-print("<p>Applicants on this list have been approved for a recreational marijuana license in the state of Oregon.</p>")
-print("<div>")
 with open('facilities.csv') as csvfile:
     facilityreader = csv.reader(csvfile, delimiter=',')
     for line in facilityreader:
@@ -20,20 +17,26 @@ with open('facilities.csv') as csvfile:
         hemp = row[8]
 
         print("<div class='facility'>")
-        print("<h3>%s (%s)</h3>" % (business_name, county))
+        print("<h2>%s</h2>" % (business_name))
         print("<div>")
-        print("<p>License Type: %s</p>" % (type))
-        print("<h4>Registration: %s</h4>" % (name))
-        print("<p>License Number: %s</p>" % (number))
+        print("<h3>%s in %s County</h3>" % (type, county))
 
-        if hemp == 'Yes':
-            print("<p><em>Hemp Certification</em></p>")
-
-        if medical_grade == 'Yes':
-            print("<p><em>Medical Certification</em></p>")
-
-        if retail_delivery == 'Yes':
-            print("<p><em>Retail Delivery Certification</em></p>")
+        if hemp == 'Yes' and medical_grade == 'Yes' and retail_delivery == 'Yes':
+            print("<p><em>Hemp, Medical and Retail Delivery Certification.</em></p>")
+        elif hemp == 'Yes' and medical_grade == 'Yes':
+            print("<p><em>Hemp and Medical Certication.</em></p>")
+        elif hemp == 'Yes' and retail_delivery == 'Yes':
+            print("<p><em>Hemp and Retail Delivery Certification.")
+        elif retail_delivery == 'Yes' and medical_grade =='Yes':
+            print("<p><em>Medical and Retail Delivery Certification.")
+        elif hemp == 'Yes':
+            print("<p><em>Hemp Certification.</em></p>")
+        elif medical_grade == 'Yes':
+            print("<p><em>Medical Certification.</em></p>")
+        elif retail_delivery == 'Yes':
+            print("<p><em>Retail Delivery Certification.</em></p>")
+        else:
+            print("<p><em>No additional certifications.</em></p>")
 
 
         print("</div>")
