@@ -20,6 +20,7 @@ h1 {
   transition: .7s ease;
   padding: 24px;
   margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
 }
 .summary {
@@ -45,5 +46,15 @@ p {
 @media (max-width: 1100px) {
   .facility {
     width: 60%;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .facility > div {
+    font-size: 1.2em;
+  }
+  .summary {
+    max-width: 60%;
+    margin: 0 auto;
   }
 }
