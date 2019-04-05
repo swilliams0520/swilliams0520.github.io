@@ -47,6 +47,10 @@ p {
   .facility {
     width: 60%;
   }
+  h1 {
+    max-width: 60%;
+    margin: 0 auto;
+  }
   h2 {
     font-size: 2em;
   }
@@ -54,7 +58,7 @@ p {
     font-size: 1.2em;
   }
   .summary {
-    max-width: 60%;
+    max-width: 55%;
     margin: 0 auto;
   }
 }
