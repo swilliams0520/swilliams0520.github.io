@@ -28,7 +28,7 @@ with open('facilities.csv') as csvfile:
         elif hemp == 'Yes' and retail_delivery == 'Yes':
             print("<p><em>Hemp and Retail Delivery Certification.")
         elif retail_delivery == 'Yes' and medical_grade =='Yes':
-            print("<p><em>Medical and Retail Delivery Certification.")
+            print("<p><em>Medical and Retail Delivery Certification.</em></p>")
         elif hemp == 'Yes':
             print("<p><em>Hemp Certification.</em></p>")
         elif medical_grade == 'Yes':
